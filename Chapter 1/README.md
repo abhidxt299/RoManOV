@@ -62,3 +62,5 @@ $ python detect_faces_video.py --prototxt deploy.prototxt.txt \
 	--model res10_300x300_ssd_iter_140000.caffemodel
 ```
 
+For additional info on caffemodels, follow this link:
+https://shengshuyang.github.io/A-step-by-step-guide-to-Caffe.html
