@@ -24,3 +24,4 @@ In this tutorial we’ll be creating two Python scripts to help you learn OpenCV
 
 Note:
 I've tried to comment the code out wherever possible. If you still have any doubts, feel free to ask me.
+Also, you can try using your own images here.
