@@ -10,17 +10,17 @@ $ unzip opencv-tutorial.zip
 $ cd opencv-tutorial
 $ tree
 .
-├── jp.png
-├── opencv_tutorial_01.py
-├── opencv_tutorial_02.py
-└── tetris_blocks.png
+├── jpark.png
+├── cv_tut_01.py
+├── cv_tut_02.py
+└── tetris.png
 0 directories, 4 files
 ```
 
 In this tutorial we’ll be creating two Python scripts to help you learn OpenCV basics
 
- 1. Our first script, ```opencv_tutorial_01.py``` will cover basic image processing operations using an image from the movie, Jurassic Park (```jp.png```).
- 2. From there, ```opencv_tutorial_02.py``` will show you how to use these image processing building blocks to create an OpenCV application to count the number of       objects in a Tetris image (```tetris_blocks.png```).
+ 1. Our first script, ```cv_tut_01.py``` will cover basic image processing operations using an image from the movie, Jurassic Park (```jpark.png```).
+ 2. From there, ```cv_tut_02.py``` will show you how to use these image processing building blocks to create an OpenCV application to count the number of objects in a Tetris image (```tetris.png```).
 
 Note:
 I've tried to comment the code out wherever possible. If you still have any doubts, feel free to ask me.
