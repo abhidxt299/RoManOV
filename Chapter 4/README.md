@@ -62,15 +62,3 @@ We can accomplish this by using our ```thresh``` image and counting the number o
 
 Based on whether the test taker was correct or incorrect yields which color is drawn on the exam. If the test taker is correct, we’ll highlight their answer in green. However, if the test taker made a mistake and marked an incorrect answer, we’ll let them know by highlighting the correct answer in red.
 
-# Extension of the chapter
-
-Since we determine if a particular bubble is “filled in” simply by counting the number of thresholded pixels in a row and then sorting in descending order, this can lead to two problems:
-
-  1. What happens if a user does not bubble in an answer for a particular question?
-  2. What if the user is nefarious and marks multiple bubbles as “correct” in the same row?
- 
-For issue #1, if a reader chooses not to bubble in an answer for a particular row, then we can place a minimum threshold on Line 108 of the code I've uploaded where we compute ```cv2.countNonZero```. If this value is sufficiently large, then we can mark the bubble as “filled in”. Conversely, if total is too small, then we can skip that particular bubble. If at the end of the row there are no bubbles with sufficiently large threshold counts, we can mark the question as “skipped” by the test taker.
-
-A similar set of steps can be applied to issue #2, where a user marks multiple bubbles as correct for a single question.
-
-Again, all we need to do is apply our thresholding and count step, this time keeping track if there are multiple bubbles that have a total that exceeds some pre-defined value. If so, we can invalidate the question and mark the question as incorrect.
