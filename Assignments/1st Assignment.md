@@ -14,10 +14,12 @@ Deque is preferred over list in the cases where we need quicker append and pop o
 
 While capturing the video, do try to downscale the ```frame``` to have a greater FPS. You can then blur the frame to reduce high frequency noise which will allow you to focus on the structural objects inside the frame.
 
-#Submission Rubric
+# Submission Rubric
 
 Submit the raw code, commented out on this folder. File name should be your name_A1.py or name_A1.ipynb
 Since this is a pretty small assignment, I expect you guys to be done by tonight.
+
+
 
 
 That's it. Have fun solving :)
