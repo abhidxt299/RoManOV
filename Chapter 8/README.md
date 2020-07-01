@@ -30,7 +30,7 @@ For example, the example network uploaded in this folder is a 3-2-3-2 feedforwar
 
 # Project directory structure
 
-Before we begin, download the files and data. From there you’ll be able to follow along as we work through today’s examples.
+Before we begin, download the files and data.To get a dataset for working on today's example, you can download it from (https://www.kaggle.com/c/dogs-vs-cats/data) From there you’ll be able to follow along as we work through today’s examples.
 
 Once your zip is downloaded, extract the files.
 
