@@ -7,7 +7,7 @@ Here, you've to design an object tracker using Computer Vision techniques. You c
 
 # Question 2
 
-Prepare a dataset of around 20K images of chesspawns and recognise them using Computer Vision and Deep Learning. Try to get a recognition accuracy of more than 75% for most of the images.
+Prepare a dataset of around 20K images of chesspawns and recognise them using Computer Vision and Deep Learning. Try to get a recognition accuracy of more than 75% for most of the images. You may refer to chapters 7.1, 7.2 and 8 for examples.
 
 # Clues and Hints
 
