@@ -414,3 +414,52 @@ Inverse Kinematics is the reverse process where the EE position is known and a s
 -->
 
 ------------
+
+<a name="4.0"></a>
+<!--<div style="text-align:left;">
+  <span style="font-size: 1.4em; margin-top: 0.83em; margin-bottom: 0.83em; margin-left: 0; margin-right: 0; font-weight: bold;">4. Design Requirements</span><span style="float:right;"><a href="#top">Back to Top</a></span>
+</div>-->
+### 4. Design Requirements
+The scope of the design is limited to a single pick-and-place cycle that consists of the following steps:
+
+1. Movement of EE towards the target object
+2. Grasping/picking the target object
+3. Movement towards the drop-site
+4. Dropping/placing the object at the drop-site
+
+Figure 4.1 shows these steps in Gazebo.
+
+<p align="center">
+<img src="Images/Requirements/gazebo-req-2.gif" alt="" width="53%">
+<br>
+<sup><b>Fig 4.1&nbsp;&nbsp;A single pick-and-place cycle</b></sup>
+<br>
+<sup>[Source: Gazebo]</sup>
+</p>
+
+The primary metrics of interest are:
+
+* Percentage of success in a total of 10 pick-and-place cycles
+* Error in the calculated EE position trajectory (via FK) compared to the EE position received in the IK service request
+* Time taken to execute a complete pick-and-place cycle
+
+<p align="center">
+<img src="Images/Requirements/moveit_demo_v3.gif" alt="" width="53%">
+<br>
+<sup><b>Fig 4.2&nbsp;&nbsp;Planned EE trajectory to drop-off location</b></sup>
+<br>
+<sup>[Source: RViz, MoveIt!]</sup>
+</p>
+
+Table 4.1 shows the criteria on which the project is evaluated,
+
+<p align="center">
+<img src="Images/Requirements/eval_criteria_v2.png" alt="" width="75%">
+<br>
+<sup><b>Table 4.1&nbsp;&nbsp;Project evaluation criteria</b></sup>
+</p>
+
+The minimum criteria is to achieve a success rate of at least *80%* with an EE trajectory error not greater than *0.5*.
+
+-----------
+
