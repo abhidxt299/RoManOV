@@ -1,11 +1,11 @@
-# Question 1
+# Task 1
 
 Here, you've to design an object tracker using Computer Vision techniques. You can use the following example case, although you're free to use any other example you  wish. 
 
     Step #1: Detect the presence of a colored ball using computer vision techniques.
     Step #2: Track the ball as it moves around in the video frames, drawing its previous positions as it moves.
 
-# Question 2
+# Task 2
 
 Prepare a dataset of around 20K images of chesspawns and recognise them using Computer Vision and Deep Learning. Try to get a recognition accuracy of more than 75% for most of the images. You may refer to chapters 7.1, 7.2 and 8 for examples.
 
