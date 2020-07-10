@@ -6,7 +6,7 @@
 </p>
 
 <p align="center">
-  <img src="Images/RoManOV_Gazebo.png" alt="" width="51%"><img src="Images/RoManOV_Gazebo.png" alt="" width="47.1%">
+  <img src="Images/RoManOV_Gazebo.png" alt="" width="51%">
 </p>
 
 <p align="center">
