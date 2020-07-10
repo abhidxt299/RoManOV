@@ -47,7 +47,7 @@
 This project originated from one of the final projects we had kept for a summer term course conducted by the project founding members. You may refer to [this](https://github.com/abhidxt299/QSTP-Introduction-to-Mechatronics) repository for further details on the course conducted.
 
 <p align="center">
-<img src="Images/RoManOV_Gazebo.jpg" alt="" width="53%">
+	<img src="Images/RoManOV_Gazebo.png" alt="" width="51%"><img src="Images/RoManOV_Gazebo.png" alt="" width="47.1%">
 <br>
 <sup><b>Fig. 1.1&nbsp;&nbsp;The current model of RoManOV developed and simulated in Gazebo</b></sup>
 </p>
@@ -81,7 +81,7 @@ The following tools are planning to be used for simulation and motion planning:
 * [MoveIt!](http://moveit.ros.org/): a ROS based software framework for motion planning, kinematics and robot control
 * [MATLAB & Simulink](https://www.mathworks.com): a multi-paradigm numerical computing environment and proprietary programming language
 
-We'll update the README.md file on the Environment setup, once the setup is done. For MATLAB & Simulink simulations, you may refer to [this](github.com/abhidxt299/RoManOV_Simulation)
+We'll update the README.md file on the Environment setup, once the setup is done. For MATLAB & Simulink simulations, you may refer to [this](github.com/abhidxt299/RoManOV_Simulation).
 
 ------------
 
@@ -116,7 +116,7 @@ Common DOFs:
 * *7*: coordinates required to fully describe the configuration of two rigid bodies in 3D free space connected by a joint
 
 <p align="center">
-<img src="Images/3-theory/workspace_RRR.jpg" alt="" width="73%">
+<img src="Images/Theory/workspace_RRR.jpg" alt="" width="73%">
 <br>
 <sup><b>Fig. 3.1&nbsp;&nbsp;Geometry of a 3-DOF anthropomorphic robot</b></sup>
 <br>
@@ -127,7 +127,7 @@ The serial manipulator shown in figure 3.1  has n=3 joints: each a [revolute](ht
 
 Therefore, the total number of DOF for any serial manipulator with *three* 1-DOF joints is:
 
-&nbsp;<img src="Images/3-theory/codecogseqn3.gif" alt="" width="5%">
+&nbsp;<img src="Images/Theory/codecogseqn3.gif" alt="" width="5%">
 
 *Note:* The DOF of a serial manipulator with only [revolute](https://en.wikipedia.org/wiki/Revolute_joint) and/or [prismatic](https://en.wikipedia.org/wiki/Prismatic_joint) joints is *always* equal to the number of its joints, except when both ends of the manipulator are fixed (closed chain linkage).
 
@@ -135,7 +135,7 @@ Therefore, the total number of DOF for any serial manipulator with *three* 1-DOF
 The *workspace* of a robotic manipulator is defined as the set of points that can be reached by its [end-effector](https://en.wikipedia.org/wiki/Robot_end_effector) <sup>[2]</sup>. In other words, it is simply the 3D space in which the robot mechanism works.
 
 <p align="center">
-<img src="Images/3-theory/scara_anthro_wksp.png" alt="" width="65%">
+<img src="Images/Theory/scara_anthro_wksp.png" alt="" width="65%">
 <br>
 <sup><b>Fig. 3.2&nbsp;&nbsp;&nbsp;Workspaces of 3-DOF SCARA and anthropomorphic manipulators</b></sup>
 <br>
@@ -150,7 +150,7 @@ It is important to note that no kinematic solution exists for the manipulator's 
 A *spherical wrist* of a robotic manipulator is designed by arranging its last three revolute joints such that their axes of rotations intersect at a common point, referred to as the *wrist center*.
 
 <p align="center">
-<img src="Images/3-theory/spherical_wrist_def_2.png" alt="" width="67%">
+<img src="Images/Theory/spherical_wrist_def_2.png" alt="" width="67%">
 <br>
 <sup><b>Fig. 3.3&nbsp;&nbsp;Difference between a spherical and non-spherical wrist</b></sup>
 <br>
@@ -165,7 +165,7 @@ The spherical wrist is an important design characteristic in anthropomorphic man
 Rotation matrices are a means of *expressing* a vector in one coordinate frame in terms of some other coordinate frame.
 
 <p align="center">
-<img src="Images/3-theory/rot_derivation_ab_3.png" alt="" width="68%">
+<img src="Images/Theory/rot_derivation_ab_3.png" alt="" width="68%">
 <br>
 <sup><b>Fig. 3.4&nbsp;&nbsp;A 2D geometric rotation between coordinate frames A and B</b></sup>
 <br>
@@ -174,19 +174,19 @@ Rotation matrices are a means of *expressing* a vector in one coordinate frame i
 In figure 3.2, Point **P** is expressed with vector **u** relative to coordinate *frame B*. The objective is to express point **P** with vector **v** relative to coordinate *frame A*. The basis vectors of **v**, **v<sub>x</sub>** and **v<sub>y</sub>** can be expressed in terms of the basis vectors of **u**, **u<sub>x</sub>** and **u<sub>y</sub>**  as follows:
 
 <p align="center">
-<img src="Images/3-theory/rot_deriv_1.png" alt="" width="32%">
+<img src="Images/Theory/rot_deriv_1.png" alt="" width="32%">
 </p>
 
 where unit vectors of *frame A*, **a<sub>x</sub>** and **a<sub>y</sub>** are expressed in terms of unit vectors of *frame B*, **b<sub>x</sub>** and **b<sub>y</sub>** as follows:
 
 <p align="center">
-<img src="Images/3-theory/rot_deriv_2.png" alt="" width="32%">
+<img src="Images/Theory/rot_deriv_2.png" alt="" width="32%">
 </p>
 
 Substituting (2) in (1) and solving for the dot products yields the following equation:
 
 <p align="center">
-<img src="Images/3-theory/rot_deriv_3.png" alt="" width="32%">
+<img src="Images/Theory/rot_deriv_3.png" alt="" width="32%">
 </p>
 
 where the first term on the right-hand side is the **2D Rotation Matrix**, denoted in this case as **<i><sup>a</sup><sub>b</sub>R</i>**. Any point on coordinate *frame B* multiplied by <i><sup>a</sup><sub>b</sub>R</i> will project it onto *frame A*. In other words, to express a vector **u** on some *frame B* as a vector **v** on a different *frame A*, **u** is multiplied by the rotation matrix with angle theta by which *frame A* is rotated from *fram B*. Also worth noting is that the rotation from A to B is equal to the *transpose* of the rotation of B to A.
@@ -196,7 +196,7 @@ where the first term on the right-hand side is the **2D Rotation Matrix**, denot
 Euler angles are a system to describe a sequence or a composition of rotations. According to [Euler's Rotation Theorem](https://en.wikipedia.org/wiki/Euler%27s_rotation_theorem), the orientation of any [rigid body](https://en.wikipedia.org/wiki/Rigid_body) w.r.t. some fixed reference frame can always be described by **three** elementary rotations in a given **sequence** as shown in figure 3.3.
 
 <p align="center">
-<img src="Images/3-theory/Inertial-Frame.png" alt="" width="52%">
+<img src="Images/Theory/Inertial-Frame.png" alt="" width="52%">
 <br>
 <sup><b>Fig. 3.5&nbsp;&nbsp;Defining Euler angles from a sequence of rotations</b></sup>
 <br>
@@ -206,7 +206,7 @@ Euler angles are a system to describe a sequence or a composition of rotations. 
 Conventionally, the movements about the three axes of rotations and their associated angles are described by the 3D rotation matrices in figure 3.4.
 
 <p align="center">
-<img src="Images/3-theory/euler_rotation_matrices_c.png" alt="" width="85%">
+<img src="Images/Theory/euler_rotation_matrices_c.png" alt="" width="85%">
 <br>
 <sup><b>Fig. 3.6&nbsp;&nbsp;3D counter-clockwise rotation matrices describing yaw, pitch and roll</b></sup>
 </p>
@@ -220,7 +220,7 @@ Euler angles are characterized by the following properties:
 **Intrinsic** or body-fixed rotations are performed about the coordinate system *as* rotated by the previous rotation. The rotation sequence changes the axis orientation after each elemental rotation while the body remains fixed.
 
 <p align="center">
-<img src="Images/3-theory/in_rot_matrices.png" alt="" width="62%">
+<img src="Images/Theory/in_rot_matrices.png" alt="" width="62%">
 </p>
 
 In an intrinsic sequence of rotations, such as, a Z-Y-X convention of a yaw, followed by a pitch, followed by a roll, subsequent elemental rotations are *post-multiplied*.
@@ -228,7 +228,7 @@ In an intrinsic sequence of rotations, such as, a Z-Y-X convention of a yaw, fol
 **Extrinsic** or fixed-axis rotations are performed about the *fixed* world reference frame. The original coordinate frame remains motionless while the body changes orientation.
 
 <p align="center">
-<img src="Images/3-theory/ex_rot_matrices.png" alt="" width="62%">
+<img src="Images/Theory/ex_rot_matrices.png" alt="" width="62%">
 </p>
 
 In an extrinsic sequence of rotations, such as, a Z-Y-X convention of a yaw, followed by a pitch, followed by a roll, subsequent elemental rotations are *pre-multiplied*.
@@ -243,7 +243,7 @@ Of particular importance is a phenomenon associated with Euler angles known as a
 In the case where a reference frame is both simultaneously rotated *and* translated (transformed) with respect to some other reference frame, a *homogeneous transform matrix* describes the transformation.
 
 <p align="center">
-<img src="Images/3-theory/homo_tf_2.png" alt="" width="44%">
+<img src="Images/Theory/homo_tf_2.png" alt="" width="44%">
 <br>
 <sup><b>Fig. 3.7&nbsp;&nbsp;Rotation and Translation of frame B relative to frame A</b></sup>
 <br>
@@ -253,13 +253,13 @@ In the case where a reference frame is both simultaneously rotated *and* transla
 In figure 3.7, point P is expressed w.r.t. frame B and the objective is to express it w.r.t. frame A. To do so would require projecting or superimposing frame B onto frame A i.e. first rotating frame B to orient it with frame A and then translating it such that the centers B<sub>0</sub> and A<sub>0</sub> of both frames are aligned.
 
 <p align="center">
-<img src="Images/3-theory/homog_transform_eqns.png" alt="" width="52%">
+<img src="Images/Theory/homog_transform_eqns.png" alt="" width="52%">
 </p>
 
 The relationship between the three vectors in figure 3.7 is shown in equation (1). The desired vector to point P from A<sub>0</sub> is the sum of the vector to point P from B<sub>0</sub>, rotated to frame A, and the translation vector to B<sub>0</sub> w.r.t A<sub>0</sub>. Equations (2) and (3) are the matrix-forms of equation (1) so that it can be rendered in software with linear algebra libraries.
 
 <p align="center">
-<img src="Images/3-theory/homog_tf_2_exp.png" alt="" width="55%">
+<img src="Images/Theory/homog_tf_2_exp.png" alt="" width="55%">
 <br>
 <sup><b>Fig. 3.8&nbsp;&nbsp;Anatomy of the homogeneous transform relationship</b></sup>
 </p>
@@ -267,7 +267,7 @@ The relationship between the three vectors in figure 3.7 is shown in equation (1
 Figure 3.8 describes the components of equation (2). The desired vector to point P (w.r.t. to A<sub>0</sub>) is obtained by multiplying the given vector to point P (w.r.t. B<sub>0</sub>) by the *homogeneous transform* matrix, composed of the block Rotation matrix projecting B onto A and the block translation vector to B w.r.t A<sub>0</sub>.
 
 <p align="center">
-<img src="Images/3-theory/robo_arm_w.png" alt="" width="43%">
+<img src="Images/Theory/robo_arm_w.png" alt="" width="43%">
 <br>
 <sup><b>Fig. 3.9&nbsp;&nbsp;Transformation between adjacent revolute joint frames</b></sup>
 </p>
@@ -277,20 +277,20 @@ As shown in figure 3.9, the position of the end-effector is known w.r.t. *its* c
 Point P relative to frame *W* can be found by successively applying equation (4) between adjacent joints:
 
 <p align="center">
-<img src="Images/3-theory/robo_arm_sol_complete_2.png" alt="" width="84%">
+<img src="Images/Theory/robo_arm_sol_complete_2.png" alt="" width="84%">
 </p>
 
 The above process can be summarized in terms of equation (1) with *<sup>W</sup><sub>C</sub>T* being the desired composite homogeneous transform that projects *frame C* onto *frame W*.
 
 <p align="center">
-<img src="Images/3-theory/robo_arm_sol_summary_3.png" alt="" width="21%">
+<img src="Images/Theory/robo_arm_sol_summary_3.png" alt="" width="21%">
 </p>
 
 #### 3.5 Denavit–Hartenberg parameters
 Before the homogeneous transforms between adjacent links can be computed, the coordinate frames of the joint links on which the transforms are applied must be defined. The [Denavit–Hartenberg (DH) parameters](https://en.wikipedia.org/wiki/Denavit%E2%80%93Hartenberg_parameters) are four parameters describing the rotations and translations between adjacent links. The definition of these parameters constitutes a convention for assigning coordinate reference frames to the links of a robotic manipulator. Figure 3.8 shows the so-called *modified* convention of DH parameters as defined by \[Craig, JJ. (2005)].
 
 <p align="center">
-<img src="Images/3-theory/mod_dh_params_labeled_4.png" alt="" width="65%">
+<img src="Images/Theory/mod_dh_params_labeled_4.png" alt="" width="65%">
 <br>
 <sup><b>Fig. 3.8&nbsp;&nbsp;The four parameters of the Modified DH convention</b></sup>
 <br>
@@ -312,17 +312,17 @@ Note:
 Recall that to compute the position of the end-effector w.r.t. the base or world reference frame, transforms between adjacent links are composed as follows:
 
 <p align="center">
-<img src="Images/3-theory/dh_eq_1.png" alt="" width="55%">
+<img src="Images/Theory/dh_eq_1.png" alt="" width="55%">
 </p>
 
 where the base frame is denoted by *0* and the end-effector's frame denoted by *N*. Thus,  <sup>0</sup><sub>N</sub>T defines the homogeneous transformation that projects frame *N* onto frame *0*. More specifically, a single transform between links *i-1* and *i* is given by
 
 <p align="center">
-<img src="Images/3-theory/dh_eq_2.png" alt="" width="55%">
+<img src="Images/Theory/dh_eq_2.png" alt="" width="55%">
 </p>
 
 <p align="center">
-<img src="Images/3-theory/dh_eq_3_v2.png" alt="" width="55%">
+<img src="Images/Theory/dh_eq_3_v2.png" alt="" width="55%">
 </p>
 
 and is made up up of two rotations *R* of magnitudes α and θ, and two displacements *D* of magnitudes ɑ and d.
@@ -353,7 +353,7 @@ Special cases involving the *Z*<sub>i-1</sub> and *Z*<sub>i</sub> axes:
 Once the frame assignments are made, the DH parameters are typically presented in tabular form (below). Each row in the table corresponds to the homogeneous transform from frame {i} to frame {i+1}.
 
 <p align="center">
-<img src="Images/3-theory/mod_dh_table_2.png" alt="" width="58%">
+<img src="Images/Theory/mod_dh_table_2.png" alt="" width="58%">
 <br>
 <sup><b>Table 3.1&nbsp;&nbsp;The four parameters of the Modified DH convention</b></sup>
 </p>
@@ -364,7 +364,7 @@ Forward Kinematics is the process of computing a manipulator's end-effector posi
 The relationship between Forward and Inverse Kinematics is depicted in figure 3.9,
 
 <p align="center">
-<img src="Images/3-theory/fk_ik_3.png" alt="" width="43%">
+<img src="Images/Theory/fk_ik_3.png" alt="" width="43%">
 <br>
 <sup><b>Fig. 3.9&nbsp;&nbsp;Relationship between Forward and Inverse Kinematics</b></sup>
 </p>
