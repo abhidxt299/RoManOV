@@ -51,16 +51,6 @@ This project originated from one of the final projects we had kept for a summer 
 ##### Objective
 The goal here is to build a robotic arm that can autonomously recognise, pick and place objects and ultimately perform complex tasks like playing a game of chess using Convolutional Neural Networks, Deep Learning and Computer Vision.
 
-The objective of this project is to demonstrate autonomous capability of the KR210 [serial manipulator](https://en.wikipedia.org/wiki/Serial_manipulator) in simulation to *pick and place* an object in a semi-unstructured environment.
-
-Within the context of this project, a single *pick and place* cycle can be divided into the following tasks:
-
-* Identify the target object
-* Plan and perform a clean movement towards the object
-* Efficiently grasp/pick the target object without disturbing other objects
-* Plan and perform a clean movement towards the drop-off site
-* Efficiently stow/place the object at the drop-off site
-
 ------------
 
 <a name="2.0"></a>
