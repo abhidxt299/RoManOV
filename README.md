@@ -43,8 +43,7 @@
 This project originated from one of the final projects we had kept for a summer term course conducted by the project founding members. You may refer to [this](https://github.com/abhidxt299/QSTP-Introduction-to-Mechatronics) repository for further details on the course conducted.
 
 <p align="center">
-	<img src="Images/RoManOV_Gazebo.png" alt="" width="51%"><img src="Images/RoManOV_Gazebo.png" alt="" width="47.1%">
-<br>
+	<img src="Images/RoManOV_Gazebo.png" alt="" width="51%">
 <sup><b>Fig. 1.1&nbsp;&nbsp;The current model of RoManOV developed and simulated in Gazebo</b></sup>
 </p>
 
