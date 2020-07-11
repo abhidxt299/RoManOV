@@ -79,12 +79,17 @@ We'll update the README.md file on the Environment setup, once the setup is done
 The following theoretical concepts will be used in this project:
 
 * Generalized Coordinates and Degrees of Freedom
-* Common industrial serial manipulators and their workspace
 * Rotation matrices and composition of rotations
 * Euler angles and Euler theorem
 * Homogeneous transforms
 * Denavit–Hartenberg parameters
 * Forward and Inverse Kinematics
+* Computer Vision
+* Deep Learning
+* Object Learning
+* Applications using Neural Networks
+* Contrast Limited Adaptive Histogram Equalisation (CLAHE)
+* Stockfish
 
 #### 3.1 Serial Manipulators
 [Serial manipulators](https://en.wikipedia.org/wiki/Serial_manipulator) are robots composed of an assembly of links connected by joints (a [Kinematic Chain](https://en.wikipedia.org/wiki/Kinematic_chain)), and the most common types of robots in industry.
