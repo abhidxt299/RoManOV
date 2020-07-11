@@ -2,10 +2,6 @@
 <!--<h4>Object picking and stowing with a 6-DOF KUKA KR210 <br>anthropomorphic articulated robotic manipulator<br>using ROS</h4>-->
 
 <p align="center">
-<b><i>Object picking and stowing with a 6-DOF KUKA KR210 anthropomorphic  robotic serial manipulator using ROS</i></b>
-</p>
-
-<p align="center">
   <img src="Images/RoManOV_Gazebo.png" alt="" width="51%">
 </p>
 
