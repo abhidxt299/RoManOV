@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Castle_white">
+  <link
+    name="Castle_white">
+    <inertial>
+      <origin
+        xyz="-2.138E-19 1.32996799703808E-18 0.012613"
+        rpy="0 0 0" />
+      <mass
+        value="0.010169" />
+      <inertia
+        ixx="1.2474E-06"
+        ixy="-7.1802E-24"
+        ixz="5.0953E-23"
+        iyy="1.2474E-06"
+        iyz="-8.28381287814304E-23"
+        izz="6.1949E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Castle_white/meshes/Castle_white.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+        <texture
+          filename="package://Castle_white/textures/" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Castle_white/meshes/Castle_white.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

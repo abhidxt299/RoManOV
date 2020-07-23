@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="king_black">
+  <link
+    name="king_black">
+    <inertial>
+      <origin
+        xyz="1.8116E-11 1.26780001186215E-10 0.019373"
+        rpy="0 0 0" />
+      <mass
+        value="0.013028" />
+      <inertia
+        ixx="4.1429E-06"
+        ixy="-5.9805E-15"
+        ixz="-1.3952E-14"
+        iyy="4.1437E-06"
+        iyz="4.12659997926766E-14"
+        izz="7.5774E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://king_black/meshes/king_black.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+        <texture
+          filename="package://king_black/textures/" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://king_black/meshes/king_black.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

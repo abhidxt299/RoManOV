@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Bishop_Black">
+  <link
+    name="Bishop_Black">
+    <inertial>
+      <origin
+        xyz="-2.6036E-05 -3.79439999904566E-09 0.015586"
+        rpy="0 0 0" />
+      <mass
+        value="0.012997" />
+      <inertia
+        ixx="2.7275E-06"
+        ixy="2.44989999999346E-13"
+        ixz="1.0685E-08"
+        iyy="2.7275E-06"
+        iyz="-1.47960000010899E-12"
+        izz="9.4758E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Bishop_Black/meshes/Bishop_Black.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+        <texture
+          filename="package://Bishop_Black/textures/" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Bishop_Black/meshes/Bishop_Black.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>

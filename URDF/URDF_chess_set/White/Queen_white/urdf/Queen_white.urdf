@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Queen_white">
+  <link
+    name="Queen_white">
+    <inertial>
+      <origin
+        xyz="3.202E-11 6.62662132312289E-17 0.019079"
+        rpy="0 0 0" />
+      <mass
+        value="0.012934" />
+      <inertia
+        ixx="3.9817E-06"
+        ixy="-3.73099992339475E-23"
+        ixz="-1.2511E-14"
+        iyy="3.9817E-06"
+        iyz="2.66402597505324E-20"
+        izz="7.5225E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Queen_white/meshes/Queen_white.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+        <texture
+          filename="package://Queen_white/textures/" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="1.5707963267949 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Queen_white/meshes/Queen_white.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>
